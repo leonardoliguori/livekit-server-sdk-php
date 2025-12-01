@@ -1,9 +1,9 @@
 {
-    "name": "agence104/livekit-server-sdk",
+    "name": "leonardoliguori/livekit-server-sdk",
     "description": "Server-side SDK for LiveKit.",
     "type": "library",
     "license": "MIT",
-    "version": "1.3.2",
+    "version": "1.4.0",
     "authors": [
         {
             "name": "Agence 10-4",
