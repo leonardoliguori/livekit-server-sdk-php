@@ -1,5 +1,5 @@
 {
-    "name": "leonardoliguori/livekit-server-sdk",
+    "name": "leonardoliguori/livekit-server-sdk-php",
     "description": "Server-side SDK for LiveKit.",
     "type": "library",
     "license": "MIT",
