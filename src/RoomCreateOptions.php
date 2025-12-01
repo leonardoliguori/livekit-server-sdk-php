@@ -21,6 +21,11 @@ class RoomCreateOptions {
    */
   protected ?int $emptyTimeout = NULL;
 
+    /**
+     * Number of seconds to keep the room open after everyone leaves.
+     */
+    protected ?int $departureTimeout = NULL;
+
   /**
    * The limit to the number of participants in a room at a time.
    */
@@ -123,6 +128,29 @@ class RoomCreateOptions {
     $this->emptyTimeout = $emptyTimeout;
     return $this;
   }
+
+    /**
+     * Get the departure timeout.
+     *
+     * @return int|null
+     *   The departure timeout in seconds.
+     */
+    public function getDepartureTimeout(): ?int {
+        return $this->departureTimeout;
+    }
+
+    /**
+     * Set the departure timeout.
+     *
+     * @param int|null $departureTimeout
+     *   The departure timeout in seconds.
+     *
+     * @return $this
+     */
+    public function setDepartureTimeout(?int $departureTimeout): self {
+        $this->departureTimeout = $departureTimeout;
+        return $this;
+    }
 
   /**
    * Get the maximum number of participants allowed.
